@@ -28,8 +28,8 @@ class Roster {
 
     // Print all the students' info SORTED by students' names.
     // Format of printing: Name, Graduation Year
-    // eg. Anthony, 2019
-    //     Brian, 2018
+    // eg. Anthony, 2018
+    //     Brian, 2019
     //     Carol, 2018
     void printRoster() {
 
