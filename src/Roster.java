@@ -2,11 +2,16 @@
  * Lab 9 Quiz
  * Name:
  */
-
+//Jialiang Liang
 import java.util.*;
 
 class Roster {
 
+    private Set<Student> roster = new HashSet<Student>();
+
+    public void addStudent(Student s) { this.roster.add(s); }
+
+    public void removeStudent(Student s) { this.roster.remove(s); }
     // Add a student to the roster through the given info.
     void addStudent(int id, String name, int gradYear) {
 
@@ -16,14 +21,14 @@ class Roster {
     // Format of printing: Number of Students: Number
     // eg. Number of Students: 5
     void printNumOfStudents() {
-
+        System.out.println("Number of Students: " + numberOfStudents );
     }
 
     // Print the info of the student who has the given ID number.
     // Format of printing: ID: Name, Graduation Year
     // eg. 100150: Daniel, 2018
     void printStudentInfo(int id) {
-
+        System.out.println(id + ": " + name + ", " + gradYear);
     }
 
     // Print all the students' info SORTED by students' names.
